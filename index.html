@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <nav>
+        <ul>
+        <a href="#portifolio">
+             <li><input type="button" value="portfólio" class="botao"></li>
+        </a>
+        
+        <a href="#h1-social">
+            <li><img src="imagens/instagram-30x30.png" alt="instagram imagem"></li>
+        </a>
+        </ul>
+    </nav>
     
+    <header>
+            <h1>Nosso site de portifólio</h1>
+
+            <div class="descrição">
+                 <p>Nosso <strong>portfólio</strong> para o trabalho da escola é uma síntese visual do nosso progresso e aprendizado ao longo do projeto. Ele destaca não apenas os resultados finais, mas também o processo criativo e as decisões importantes que tomei. Com uma combinação de imagens e textos, meu portfólio apresenta de forma concisa e impactante o trabalho que realizamos.</p>
+            </div>
+    
+    </header>
+    
+    <main>
+            <h1 id="portifolio">Portifolio</h1>
+        
+            <div class="arduino-container">
+                <h1>Arduino</h1>
+                
+                <a href="pag-arduino/pag-arduino.html">
+                    <picture type="imagem/jpg">
+                    
+                                <source media="(max-width:750px)" srcset="imagens/arduino-pequena.jpg" style="width: 1000px;">
+                                <img src="imagens/arduino-grande.jpg" alt="">
+                    
+                    </picture>
+                </a>
+            </div>
+            
+            <div class="condigo-container">
+                <h1>Codigos</h1>
+                
+                <a href="pag-codigos/pag-codigos.html">
+                    <picture type="imagem/png">
+                    
+                                <source media="(max-width: 800px)" srcset="imagens/codigos-pequena.png" >
+                                <img src="imagens/codigos-grande.png" alt="">
+                    
+                    </picture>
+                </a>
+            </div>
+       
+            
+            <div class="Referências-container">
+                <h2>Referências</h2>
+
+                     <ul><li class="Link-container"><a target="_blank" href="https://www.makerhero.com/blog/como-criar-um-semaforo-com-arduino/" >Site ultilizado</a></li></ul>
+
+                   
+                     <iframe width="700" height="465" src="https://www.youtube.com/embed/CbV5fZ-TdI8?start=480" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            
+            
+            </div>
+    </main>
+
+    <footer>
+            
+        <div class="social-container">          
+            <h1 id="h1-social">Social</h1>      
+            <ul>
+            <!--Miguel--><li><a href="https://www.instagram.com/miguelconradoo/" target="_blank"><img src="../imagens/instagram-30x30.png" alt="instagram-imagem"> Miguel</a></li>
+                    
+            <!--Maria--><li><a href="https://www.instagram.com/mahopxn/" target="_blank"><img src="../imagens/instagram-30x30.png" alt="instagram-imagem">Maria</a></li>
+                
+            <!--Lucas--><li><a href="https://www.instagram.com/lucaxxsss/" target="_blank"><img src="../imagens/instagram-30x30.png" alt="instagram-imagem">Lucas</a></li>
+        
+            <!--G6--><li><a href="https://www.instagram.com/ferreiraa.xl/" target="_blank"><img src="../imagens/instagram-30x30.png" alt="instagram-imagem">Gustavo</a></li>
+            
+             <!--William--><li><a href="https://www.instagram.com/william_antuneta/" target="_blank"><img src="../imagens/instagram-30x30.png" alt="instagram-imagem">William</a></li>
+            
+            <!--pedro--><li><a href="https://www.instagram.com/preduuu_k" target="_blank"><img src="../imagens/instagram-30x30.png" alt="instagram-imagem">Pedro</a></li> 
+              
+            <!--João--><li><a href="https://www.instagram.com/preduuu_k" target="_blank"><img src="../imagens/instagram-30x30.png" alt="instagram-imagem">João</a></li>
+                </ul>
+        </div>
+    </footer>
 </body>
 </html>
