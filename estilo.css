@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: 0;
-
+    
     font-family: Urbanist;
 }
 
@@ -18,20 +18,21 @@ html {
 
 .bg-container {
     height: 100vh;
-    background: url('imagens/arduino_assembly_solidworks_animation\ \(1\).gif') no-repeat fixed;
+    background: url('imagens/01_arduinounor3.gif') no-repeat fixed center center;
     background-size: cover;
 }
 
 .bg-blur {
-    background-color: rgba(10, 10, 16, 0.9);
+    background-color: rgba(0, 0, 0, 0.90);
     backdrop-filter: blur(7px);
 }
 
 nav {
-    backdrop-filter: blur(5px);
+    height: 5vh;
+    backdrop-filter: blur(px);
     position: sticky;
     top: 0;
-    padding: 20px 0px;
+    padding: 15px 0px;
     background-color: transparent;
 
     ul {
@@ -50,36 +51,45 @@ nav {
     li:nth-child(1) img{
         filter: invert(0.85);
         scale: 1;
-        transition: scale .6s ease-out;
+        transition: scale .5s ease-out;
+        transition: rotate .5s ease-out;
+        rotate: 0deg;
+
     }
 
     li:nth-child(1):hover img {
         filter: invert(1.85);
-        scale: 1.08;
-        transition: scale .4s ease-in, filter .4s ease-in;
+        rotate: -10deg;
+        scale: 1.1;
+        transition: filter .4s ease-in;
+        transition: rotate 1s ease-in;
+        transition: scale .5s ease-in;
+ 
     }
 
     li:nth-child(1)::after {
+        text-transform: uppercase;
         content:'Portifólio';
-        font-size: 2.8rem;
-        color: white;
+        font-size: 2.6rem;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.828);
         position: relative;
         left: -1.8rem;
         opacity: 0;
         scale: 1;
 
-        transition: all .5s ease-in-out;
-        transition-delay: .2s;
+        transition: all .3s ease-out;
     }
 
     li:nth-child(1):hover::after {
+        cursor: pointer;
         opacity: 100%;
         position: relative;
         left: 0.5rem;
-    }
 
-    li:nth-child(2) {
         
+        transition: all .3s ease-out;
+        transition-delay: .3s;
     }
 
 }
@@ -88,19 +98,49 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
-    height: 88vh;
+    width: 87vw;
+    height: 95vh;
 
     margin: auto;
 
-    h1 {
-        font-size: 5rem;
+   .btn-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     h1 {
+        font-size: 6rem;
         color: white;
         
         span {
             color: rgb(115, 221, 124);
         }
+
+        margin-bottom: 1rem;
     }
+
+    input {
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        width: 200px;
+
+        background-color: transparent;
+        color: #73dd7c;
+        border: 1px solid #73dd7c;
+        border-radius: 50px;
+        cursor: pointer;
+
+        transition: all ease-in-out .3s;
+    }
+
+    input:hover {
+        color: black;
+        background-color: white;
+
+        scale: 1.05;
+    }
+}
 
     .descrição {
         line-height: 1.7rem;
@@ -114,6 +154,204 @@ header {
     }
 }
 
-.arduino-container, #portifolio {
+.arduino-container, #portifolio, .codigo-container {
     background-color: #222227;
+}
+
+#portifolio{
+    font-size: 5rem;
+    color: #ffffffff;
+    padding: 5rem 0rem 2rem 0rem;
+    text-align: center;
+}
+
+.content-container {
+    color: #fffffff2;
+    background-color: #222227;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.arduino-container a, .arduino-container{
+    color: #fffffff2;
+    text-decoration: none;
+}
+
+.arduino-container, .codigo-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    img {
+        animation: img-anim 2s linear infinite;
+    }
+}
+
+#btn-sm {
+    margin-top: .5rem;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: #73dd7c 1px solid;
+    border-radius: 50px;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #73dd7c;
+    scale: 1;
+
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+}
+
+#btn-sm:hover {
+    scale: 0.95;
+}
+
+@keyframes img-anim{
+    0%{
+        scale: 95%;
+    }
+
+    50%{
+        scale: 100%;
+    }
+
+    100%{
+        scale: 95%;
+    }
+}
+
+@keyframes panim {
+    0%{
+        opacity: 0;
+        position: relative;
+        left: -8rem;
+    }
+
+    100%{
+        opacity: 1;
+        position: relative;
+        left: 0rem;
+    }
+}
+
+@keyframes panim2 {
+    0%{
+        opacity: 0;
+        position: relative;
+        left: 8rem;
+    }
+
+    100%{
+        opacity: 1;
+        position: relative;
+        left: 0rem;
+    }
+}
+
+#res, #res2 {
+    margin: 15px;
+    width: 500px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.Referências-container {
+    background-color: #121214;
+    color: #fffffff2;
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #73dd7c;
+    }
+
+    ul {
+        list-style-type: circle;
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        padding: 3rem;
+        font-size: 4rem;
+        color: white;
+
+        img {
+            margin-right: 10px;
+            height: 80px;
+        }
+    }
+
+    h::before {
+        content: '';
+    }
+
+    .ard-vid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85vw;
+        margin: auto;
+        transition: all .5s ease-in-out;
+        
+
+        iframe {
+            width: 820px;
+            object-fit: cover;
+            box-shadow:1px 1px 20px #000000;
+            position: relative;
+            left: 260px;
+            opacity: .2;
+            transition: all .7s ease-in-out;
+        }
+
+         p {
+            opacity: 0;
+            margin-left: 2rem;
+            width: 500px;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            transition: all .2s ease-in-out;
+
+            span {
+                color: rgb(236, 54, 54);
+                font-size: 2rem;
+            }
+         }
+
+        
+    }
+}
+
+.ard-vid:hover {
+    opacity: 1;
+    iframe {
+        left: 0;
+        opacity: 1;
+    }
+
+    p {
+        opacity: 1;
+        margin-left: 8rem;
+        transition: all .5s ease-in-out;
+    }
+    span {
+        font-weight: bold;
+        text-shadow:1px 1px 15px rgb(234, 71, 71);
+        transition: all .5s ease-in-out;
+    }
+
 }
