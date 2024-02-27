@@ -58,10 +58,11 @@
                 
                 <div class="scl">
             
-                    <div class="social-container">          
+                    <div class="social-container">     
+                        <p>Clicle aqui para ver os</p>     
                         <div class="social">
-                            <h1 id="h1-social">Sócio Integrantes</h1>
-                            <img id="btn-icon" src="imagens/voltar.png">
+                            <h1 id="h1-social" >Integrantes</h1>
+                            <button></button>
                         </div>      
                         
                         <div class="soc-container" id="soc-container">
@@ -80,7 +81,7 @@
                 </div>
 
                 <div class="codigo-container">
-                    <h1>Codígos</h1>
+                    <h1>Códigos</h1>
                 
                     <a href="pag-codigos/pag-codigos.html">
                         <img height="120px" src="imagens/ard-code.png" alt="">
@@ -189,9 +190,11 @@
             }
         }
 
-        const menu = document.querySelector('.social-container .social img')
+        const menu = document.querySelector('.social-container .social')
         const integrantes = document.querySelector('.soc-container')
-        menu.addEventListener('click', () => integrantes.classList.toggle("active"))
+        menu.addEventListener('click', () => {
+        integrantes.classList.toggle("active");
+        });
             </script>
 
 </body>
