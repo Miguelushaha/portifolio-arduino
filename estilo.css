@@ -431,10 +431,12 @@ header {
 
 .social:hover button::before {
     transform: rotate(135deg);
+    background-color: #73dd7c;
 }
 
 .social:hover button::after {
     transform: rotate(-135deg) translateY(8px) translateX(4px);
+    background-color: #73dd7c;
 }
 
     h1 {
@@ -443,6 +445,11 @@ header {
         color: white;
 
         cursor: pointer;
+        transition:.3s ease-in-out;
+    }
+
+    h1:hover {
+        color: #73dd7c;
     }
 
     ul {
