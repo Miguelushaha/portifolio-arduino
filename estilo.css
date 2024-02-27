@@ -92,6 +92,10 @@ nav {
         transition-delay: .3s;
     }
 
+    li:nth-child(2) {
+        color: white;
+        font-size: 3rem;
+    }
 }
 
 header {
@@ -258,7 +262,7 @@ header {
 
 #res, #res2 {
     margin: 15px;
-    width: 500px;
+    width: 400px;
     font-size: 1.2rem;
     line-height: 1.6rem;
 }
@@ -366,11 +370,25 @@ header {
 }
 
 .social-container {
-    padding: 8rem 0rem 3rem 0rem;
-    background-color: #121214;
+    padding: 4rem 0rem 0rem 0rem;
+    background-color: #222227;
+    
 
 .soc-container {
-    display: none;
+    background-color: #222227;
+    clip-path: circle(1px at 50% -55%);
+    pointer-events: none;
+    transition:all .5s ease-in-out;
+}
+
+.soc-container.active{
+    clip-path: circle(1600px at 50% -15%);
+    pointer-events: all;
+
+    ul {
+        background-color: #222227;
+        padding: 2vh;
+    }
 }
 
     .social {
@@ -392,24 +410,27 @@ header {
         }
     }
     h1 {
-        padding: 3rem 0rem;
-        font-size: 4rem;
+        padding: 1rem 0rem;
+        font-size: 3rem;
         color: white;
     }
 
     ul {
+        background-color: #222227;
         list-style: none;
-        width: 50vw;
+        width: 45vw;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 4rem;
         align-items: center;
+
+        transition: all .3s ease-out;
     }
 
     ul li img{
-        height: 200px;
+        height: 80px;
         border-radius: 50%; 
 
         position: relative;
@@ -420,15 +441,15 @@ header {
     ul li img:hover {
 
         position: relative;
-        left: 50px;
+        left: 20px;
     }
 
     li::before { 
         position: relative;
-        top: -85px;
+        top: -35px;
         left: -10px;
 
-        font-size: 3rem;
+        font-size: 2rem;
         color: white;
         font-weight: bold;
 
@@ -512,56 +533,4 @@ header {
         transition: all .5s ease-in-out;
     }
 
-    li::after { 
-        position: relative;
-        top: -80px;
-        right: 15px;
-        
-        font-size: 1.4rem;
-        color: white;
-        font-weight: bold;
-
-        display: none;
-        transition: display 1s ease-in-out; 
-    }
-
-    li:nth-child(1)::after {
-        content: 'Sócio do Neymar';
-    }
-
-    li:nth-child(2)::after {
-        content: 'Vendedor de NFTs';
-
-        right: 35px;
-    }
-
-    li:nth-child(3)::after {
-        content: 'Pseudo-empreendedor de Informatica';
-        right: 260px;
-    }
-
-    li:nth-child(4)::after {
-        content: 'Atrás do corre...';
-        right: 45px;
-    }
-
-    li:nth-child(5)::after {
-        content: 'Baterista de banda';
-        right: 80px;
-    }
-
-    li:nth-child(6)::after {
-        content: 'Namorada do Miguel';
-        right: 40px;
-    }
-
-    li:nth-child(7)::after {
-        content: 'Cortador de grama';
-        right: 30px;
-    }
-
-    li:hover::after{
-        display: block;
-        transition: display 1s ease-in-out;
-    }
 }
