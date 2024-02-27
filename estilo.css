@@ -29,9 +29,9 @@ html {
 
 nav {
     height: 5vh;
-    backdrop-filter: blur(px);
     position: sticky;
     top: 0;
+    left: 0;
     padding: 15px 0px;
     background-color: transparent;
 
@@ -372,9 +372,12 @@ header {
 .social-container {
     text-align: center;
     line-height: 1.8rem;
-    padding: 4rem 0rem 0rem 0rem;
-    background-color: #222227;
+    padding: 0rem 0rem 0rem 0rem;
+    background-color: transparent;
     
+    p {
+        font-size: 1rem;
+    }
 
     .social {
         display: flex;
@@ -382,7 +385,6 @@ header {
         align-items: center;
 
         button {
-            z-index: 1;
             margin-left: 15px;
             border: none;
             background: none;
@@ -406,7 +408,7 @@ header {
 
 .soc-container {
     padding-top: 1rem;
-    background-color: #222227;
+    background-color: transparent;
     clip-path: circle(1px at 50% -55%);
     pointer-events: none;
     opacity: 0;
@@ -418,13 +420,12 @@ header {
     pointer-events: all;
     opacity: 1;
     ul {
-        background-color: #222227;
+        background-color: transparent;
         padding: 2vh;
     }
 }
 
 .social:hover button {
-    position: relative;
     border-top-color: transparent;
 }
 
@@ -433,9 +434,7 @@ header {
 }
 
 .social:hover button::after {
-    top: -13px;
-    left: 7px;
-    transform: rotate(-135deg) translateY(-7px) translateX(0px);
+    transform: rotate(-135deg) translateY(8px) translateX(4px);
 }
 
     h1 {
@@ -447,9 +446,8 @@ header {
     }
 
     ul {
-        background-color: #222227;
         list-style: none;
-        width: 45vw;
+        width: 50vw;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
