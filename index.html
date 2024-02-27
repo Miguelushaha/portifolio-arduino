@@ -83,17 +83,22 @@
     <footer>
             
         <div class="social-container">          
-            <h1 id="h1-social">Sócio Integrantes</h1>      
+            <div class="social">
+                <h1 id="h1-social">Sócio Integrantes</h1>
+                <img src="imagens/voltar.png" onclick="socint()">
+            </div>      
             
-            <ul>
-                <li><a href=""><img src="imagens/social/miguel.jpg" ></a></li>
-                <li><a href=""><img src="imagens/social/lucas.jpg" ></a></li>
-                <li><a href=""><img src="imagens/social/pedro.jpg" ></a></li>
-                <li><a href=""><img src="imagens/social/gustavo.jpg" ></a></li>
-                <li><a href=""><img height="320px" src="imagens/social/joao.jpg" ></a></li>
-                <li><a href=""><img src="imagens/social/maria.jpg" ></a></li>
-                <li><a href=""><img src="imagens/social/william.jpg" ></a></li>
-            </ul>
+            <div class="soc-container" id="soc-container">
+                <ul>
+                    <li><a href=""><img src="imagens/social/miguel.jpg" ></a></li>
+                    <li><a href=""><img src="imagens/social/lucas.jpg" ></a></li>
+                    <li><a href=""><img src="imagens/social/pedro.jpg" ></a></li>
+                    <li><a href=""><img src="imagens/social/gustavo.jpg" ></a></li>
+                    <li><a href=""><img height="320px" src="imagens/social/joao.jpg" ></a></li>
+                    <li><a href=""><img src="imagens/social/maria.jpg" ></a></li>
+                    <li><a href=""><img src="imagens/social/william.jpg" ></a></li>
+                </ul>
+            </div>
             
         </div>
     </footer>
@@ -173,6 +178,15 @@
                 paragrafo2.parentNode.removeChild(paragrafo2);
                 p2 = null
                 isParagraphAdded = false
+            }
+        }
+
+        function socint() {
+            socc = document.getElementById('soc-container')
+            if (socc.style.display == 'block') {
+                socc.style.display = 'none'
+            } else {
+                socc.style.display = 'block'
             }
         }
             </script>

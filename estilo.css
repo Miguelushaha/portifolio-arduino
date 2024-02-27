@@ -369,9 +369,30 @@ header {
     padding: 8rem 0rem 3rem 0rem;
     background-color: #121214;
 
+.soc-container {
+    display: none;
+}
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin-left: 20px;
+            height: 100%;
+            transform: rotate(0deg);
+
+            cursor: pointer;
+
+            transition: all .3s ease-in-out;
+        }
+
+        img:hover {
+            transform: rotate(270deg);
+        }
+    }
     h1 {
         padding: 3rem 0rem;
-        text-align: center;
         font-size: 4rem;
         color: white;
     }
