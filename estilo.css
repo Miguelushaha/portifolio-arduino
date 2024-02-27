@@ -266,8 +266,6 @@ header {
 .Referências-container {
     background-color: #121214;
     color: #fffffff2;
-    height: 75vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,15 +275,20 @@ header {
         color: #73dd7c;
     }
 
+    a:hover {
+        color: #1e7827;
+    }
+
     ul {
         list-style-type: circle;
+        color: #dddddd;
         font-size: 1.4rem;
     }
 
     h1 {
         display: flex;
         align-items: center;
-        padding: 3rem;
+        padding: 3rem 0rem 1.2rem 0rem;
         font-size: 4rem;
         color: white;
 
@@ -304,16 +307,19 @@ header {
         justify-content: center;
         align-items: center;
         width: 85vw;
-        margin: auto;
+        height: 55vh;
+        margin: 0px auto;
+        padding-bottom: 1rem;
         transition: all .5s ease-in-out;
         
 
         iframe {
             width: 820px;
+            border-radius: 8px;
             object-fit: cover;
-            box-shadow:1px 1px 20px #000000;
+            box-shadow:1px 1px 30px #000000;
             position: relative;
-            left: 260px;
+            left: 150px;
             opacity: .2;
             transition: all .7s ease-in-out;
         }
@@ -321,18 +327,20 @@ header {
          p {
             opacity: 0;
             margin-left: 2rem;
-            width: 500px;
+            width: 300px;
             font-size: 1.2rem;
             line-height: 1.7rem;
-            transition: all .2s ease-in-out;
+            transition: all .3s ease-in-out;
 
             span {
                 color: rgb(236, 54, 54);
                 font-size: 2rem;
             }
          }
-
         
+         li.Link-container {
+            padding: 2rem 0rem;
+         }
     }
 }
 
@@ -344,9 +352,10 @@ header {
     }
 
     p {
+        width: 500px;
         opacity: 1;
         margin-left: 8rem;
-        transition: all .5s ease-in-out;
+        transition: all .8s ease-in-out;
     }
     span {
         font-weight: bold;
@@ -354,4 +363,184 @@ header {
         transition: all .5s ease-in-out;
     }
 
+}
+
+.social-container {
+    padding: 8rem 0rem 3rem 0rem;
+    background-color: #121214;
+
+    h1 {
+        padding: 3rem 0rem;
+        text-align: center;
+        font-size: 4rem;
+        color: white;
+    }
+
+    ul {
+        list-style: none;
+        width: 50vw;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    ul li img{
+        height: 200px;
+        border-radius: 50%; 
+
+        position: relative;
+        left: 0px;
+        transition: all .5s ease-in-out;
+    }
+
+    ul li img:hover {
+
+        position: relative;
+        left: 50px;
+    }
+
+    li::before { 
+        position: relative;
+        top: -85px;
+        left: -10px;
+
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+
+        transition: all .2s ease-in-out;  
+    }
+
+    li:nth-child(1)::before {
+        content: 'Miguel';
+    }
+
+    li:nth-child(2)::before {
+        content: 'Lucas';
+    }
+
+    li:nth-child(3)::before {
+        content: 'Pedro';
+    }
+
+    li:nth-child(4)::before {
+        content: 'Gu';
+    }
+
+    li:nth-child(5)::before {
+        content: 'João';
+    }
+
+    li:nth-child(6)::before {
+        content: 'Maria';
+    }
+
+    li:nth-child(7)::before {
+        content: 'William';
+    }
+
+    li:nth-child(1):hover::before {
+        content: 'Miguel';
+        position: relative;
+        left: -20px;
+        transition: all .5s ease-in-out;
+    }
+
+    li:nth-child(2):hover::before {
+        content: 'Lucas';
+        position: relative;
+        left: -20px;
+        transition: all .5s ease-in-out;
+    }
+
+    li:nth-child(3):hover::before {
+        content: 'Pedro';
+        position: relative;
+        left: -20px;
+        transition: all .5s ease-in-out;
+    }
+
+    li:nth-child(4):hover::before {
+        content: 'Gu';
+        position: relative;
+        left: -20px;
+        transition: all .5s ease-in-out;
+    }
+
+    li:nth-child(5):hover::before {
+        content: 'João';
+        position: relative;
+        left: -20px;
+        transition: all .5s ease-in-out;
+    }
+
+    li:nth-child(6):hover::before {
+        content: 'Maria';
+        position: relative;
+        left: -20px;
+        transition: all .5s ease-in-out;
+    }
+
+    li:nth-child(7):hover::before {
+        content: 'William';
+        position: relative;
+        left: -20px;
+        transition: all .5s ease-in-out;
+    }
+
+    li::after { 
+        position: relative;
+        top: -80px;
+        right: 15px;
+        
+        font-size: 1.4rem;
+        color: white;
+        font-weight: bold;
+
+        display: none;
+        transition: display 1s ease-in-out; 
+    }
+
+    li:nth-child(1)::after {
+        content: 'Sócio do Neymar';
+    }
+
+    li:nth-child(2)::after {
+        content: 'Vendedor de NFTs';
+
+        right: 35px;
+    }
+
+    li:nth-child(3)::after {
+        content: 'Pseudo-empreendedor de Informatica';
+        right: 260px;
+    }
+
+    li:nth-child(4)::after {
+        content: 'Atrás do corre...';
+        right: 45px;
+    }
+
+    li:nth-child(5)::after {
+        content: 'Baterista de banda';
+        right: 80px;
+    }
+
+    li:nth-child(6)::after {
+        content: 'Namorada do Miguel';
+        right: 40px;
+    }
+
+    li:nth-child(7)::after {
+        content: 'Cortador de grama';
+        right: 30px;
+    }
+
+    li:hover::after{
+        display: block;
+        transition: display 1s ease-in-out;
+    }
 }
