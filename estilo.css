@@ -470,14 +470,14 @@ header {
         border-radius: 50%; 
 
         position: relative;
-        left: 0px;
+        left: 3px;
         transition: all .5s ease-in-out;
     }
 
     ul li img:hover {
 
         position: relative;
-        left: 20px;
+        left: 10px;
     }
 
     li::before { 
