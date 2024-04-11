@@ -584,13 +584,16 @@ header {
     color: white;
     box-shadow: 7px 7px 7px white;
 
-    text-align: center;
-        
+    & div{
+        width: 600px;
+        margin: auto;
+        padding: 10px;
+        text-align: center;        
     & p{
         padding: 10px;
     }
     
-}
+}}
 
 
 
