@@ -577,6 +577,24 @@ header {
     }
 
 }
+.respostas-container{
+    padding: 10px;
+    
+    background-color: #222227;
+    color: white;
+    box-shadow: 7px 7px 7px white;
+
+    text-align: center;
+        
+    & p{
+        padding: 10px;
+    }
+    
+}
+
+
+
+
 
 footer {
     background-color: #121214;
