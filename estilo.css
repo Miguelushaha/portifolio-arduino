@@ -30,7 +30,7 @@ html {
 }
 
 .bg-blur {
-    background-color: rgba(0, 0, 0, 0.90);
+    background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(7px);
 }
 
